@@ -8,9 +8,13 @@ from timer import Timer
 
 
 class Alien(Sprite): 
-    alien_images = [[pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images/alien_03-{n}.png'), 0, 2) for n in range(2)],
-                    [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images/alien__1{n}.png'), 0, 0.7) for n in range(2)],
-                    [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images/alien__2{n}.png'), 0, 0.7) for n in range(2)]]
+    # alien_images = [[pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images-1/alien_03-{n}.png'), 0, 3.7) for n in range(2)],
+    #                 [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images-1/alien__1{n}.png'), 0, 3.7) for n in range(2)],
+    #                 [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images-1/alien__2{n}.png'), 0, 3.7) for n in range(2)]]
+
+    alien_images = [[pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images-1/alien_0{n}.png'), 0, 3.7) for n in range(2)],
+                    [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images-1/alien__1{n}.png'), 0, 3.7) for n in range(2)],
+                    [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images-1/alien__2{n}.png'), 0, 3.7) for n in range(2)]]
 
     aelist0 = [10, 10, 'blank']
     aelist1 = [20, 20, 'blank']

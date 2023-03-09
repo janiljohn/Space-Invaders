@@ -8,9 +8,13 @@ from utils import Util
 
 
 class Ship(Sprite):  # TODO -- change to use YOUR OWN IMAGE for the ship AND its explosion
-    ship_images = [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images/ship.bmp'), 0, 1.0)]
+    # ship_images = [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images/ship.bmp'), 0, 1.0)]
+    # ship_hit_images = [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images/ship_fields{n}.png'), 0, 1.0) for n in range(9)]
+    # ship_explosion_images = [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images/ship_explode{n}.png'), 0, 1.0) for n in range(6)]
+
+    ship_images = [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images-1/ship_explode0.png'), 0, 3.7)]
     ship_hit_images = [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images/ship_fields{n}.png'), 0, 1.0) for n in range(9)]
-    ship_explosion_images = [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images/ship_explode{n}.png'), 0, 1.0) for n in range(6)]
+    ship_explosion_images = [pg.transform.rotozoom(pg.image.load(f'spaceInvaders_start/images-1/ship_explode{n}.png'), 0, 3.7) for n in range(6)]
 
     def __init__(self, game):
         super().__init__()
